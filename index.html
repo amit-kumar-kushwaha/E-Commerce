@@ -18,6 +18,12 @@
             colors: {
               primary: "#e8284a",
               secondary: "#1e40af",
+              accent: "",
+              background: "#00A300",
+              border: "#00A300",
+              hover: "#00A300",
+              active: "",
+              focus: "",
             },
           },
         },
@@ -27,7 +33,7 @@
   <body class="light">
     <!-- Hearder -->
     <div
-      class="flex w-full text-black mx-auto py-3 px-28 justify-between flex space-x-4 text-center py-2 text-white bg-primary dark:primary dark:text-gray-200 justify-between"
+      class="flex w-full text-black mx-auto py-1 px-5 lg:px-28 space-x-4 text-center text-white bg-primary dark:primary dark:text-gray-200 justify-between"
     >
       <div>Notice</div>
 
@@ -50,8 +56,8 @@
         </a>
       </div>
     </div>
-    <header class="w-full bg-white dark:bg-gray-900 sticky top-0">
-      <div class="container mx-auto py-3 px-4">
+    <header class="md:px-5 w-full bg-white dark:bg-gray-900 sticky top-0">
+      <div class="container w-full mx-auto py-3 px-4">
         <div class="flex justify-between">
           <!-- LOGO -->
           <div class="logo w-32 h-auto">
@@ -60,7 +66,9 @@
             /></a>
           </div>
           <div class="flex justify-between items-center gap-5">
-            <form class="search-box px-4 py-1 border-2 rounded-3xl">
+            <form
+              class="flex gap-0 search-box px-2 md:px-4 py-1 border-2 rounded-2xl md:rounded-3xl"
+            >
               <input
                 type="text"
                 class="bg-transparent focus:outline-none focus:ring-0"
@@ -76,7 +84,7 @@
             </form>
             <!-- Menu -->
             <nav>
-              <ul class="flex gap-5 dark:text-gray-100">
+              <ul class="hidden md:flex gap-5 dark:text-gray-100">
                 <li>
                   <a
                     href="#"
@@ -113,7 +121,7 @@
       </div>
     </header>
     <div
-      class="flex w-full bg-white text-gray-800 text-sm mx-auto py-3 px-28 justify-between dark:bg-gray-900"
+      class="hidden lg:flex w-full bg-white text-gray-800 text-sm mx-auto py-3 px-28 justify-between dark:bg-gray-900"
     >
       <ul class="flex gap-10 dark:text-gray-800 align-center">
         <li>
@@ -149,13 +157,6 @@
             href="#"
             class="hover:text-primary dark:text-white dark:hover:text-primary"
             ><i class="fa-solid fa-volleyball pr-1"></i>Sports</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="hover:text-primary dark:text-white dark:hover:text-primary"
-            ><i class="fa-solid fa-school pr-1"></i> Back to School</a
           >
         </li>
       </ul>
